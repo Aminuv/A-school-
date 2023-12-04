@@ -1,22 +1,24 @@
-import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+import Home from './pages/Home'
+import SingIn from './pages/SingIn'
+import SingUp from './pages/SingUp'
+import About from './pages/About'
+import Profile from './pages/Profile'
+
+
 
 export default function App() {
   return (
-    <div>
-      
-    <div> 
-      <img src="https://cdn.educba.com/academy/wp-content/uploads/2020/01/React-Native-Architecture-1.jpg.webp" alt="" />
-    <h1>el</h1>
-    </div> 
-    <div>
-    <button className="text"> 
-    </button>
-    </div>
-    
-    
-    
-    </div>
-
+   <BrowserRouter>
+      <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path ="/sing-in" element={<SingIn />} />
+          <Route path ="/sin-up" element={<SingUp />} />
+          <Route path ="/about" element={<About />} />
+          <Route path="/profile" element={<Profile />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
