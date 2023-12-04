@@ -1,11 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import Home from './pages/Home'
-import SingIn from './pages/SingIn'
-import SingUp from './pages/SingUp'
-import About from './pages/About'
-import Profile from './pages/Profile'
-import Header from './Tpic/Header'
 
 
 
