@@ -12,7 +12,7 @@ import Header from './Tpic/Header'
 export default function App() {
   return (
    <BrowserRouter>
-
+     <Header  />
       <Routes>
           <Route path="/" element={<Home />} />
           <Route path ="/sing-in" element={<SingIn />} />
