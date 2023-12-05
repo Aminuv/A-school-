@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* the Back round color */
+body {
+  background-color:rgb(183, 200, 214);
+}
