@@ -16,3 +16,14 @@ app.listen(3000, () => console.log('Server is running in port 30000'));
 
 app.use("/api/user", userRouter)
 app.use("/api/auth", authRouter)
+
+// the moddelwre for handling errors.
+app.use((err, req, res, next) => {
+    const statusCode = err.statusCode || 500;
+    const message = err.message || "Internal Server Error";
+    return res.status(statusCode).json({
+        error: false,
+        statusCode,
+        message,
+    });
+});
