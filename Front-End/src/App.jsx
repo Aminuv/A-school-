@@ -7,8 +7,6 @@ import Profile from './pages/Profile';
 import Header from './Tpic/Header';
 
 
-
-
 export default function App() {
   return (
     <BrowserRouter>
