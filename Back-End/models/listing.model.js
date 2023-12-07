@@ -18,16 +18,9 @@ const listingSchema = new mongoose.Schema(
       type: Number,
       required: true,
     },
-    discountPrice: {
-      type: Number,
-      required: true,
-    },
+    // vip OR groupe
     type: {
       type: String,
-      required: true,
-    },
-    offer: {
-      type: Boolean,
       required: true,
     },
     imageUrls: {
