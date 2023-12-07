@@ -31,6 +31,7 @@ export default function SignIn() {
         body: JSON.stringify(formData),
       });
       const data = await res.json();
+      localStorage.setItem('token', data.token);
       console.log(data);
       if (data.success === false) {
         dispatch(signInFailure(data.message));
